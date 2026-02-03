@@ -9,20 +9,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 /* Gotham Condensed Font Faces */
-@font-face {
-    font-family: 'Gotham Condensed Bold';
-    src: url('/fonts/gotham-condensed-bold.woff2') format('woff2');
-    font-weight: normal;
+@layer base {
+  @font-face {
+    font-family: 'GothamCondensed-Bold';
+    src: url('/fonts/GothamCondensed-Bold.otf') format('opentype');
+    font-weight: 700;
     font-style: normal;
     font-display: swap;
-}
+  }
 
-@font-face {
-    font-family: 'Gotham Condensed Light';
-    src: url('/fonts/gotham-condensed-light.woff2') format('woff2');
-    font-weight: normal;
+  @font-face {
+    font-family: 'GothamCondensed-Medium';
+    src: url('/fonts/GothamCondensed-Medium.otf') format('opentype');
+    font-weight: 500;
     font-style: normal;
     font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'GothamCondensed-Light';
+    src: url('/fonts/GothamCondensed-Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
 }
 
 @theme {
@@ -72,7 +82,8 @@
     /* Hero Buttons - matches et_pb_button_0 */
     .wp-hero-btn {
         background-color: #f3efe4;
-        font-family: 'Gotham Condensed Bold', Helvetica, Arial, Lucida, sans-serif;
+        font-family: 'GothamCondensed-Bold', Helvetica, Arial, Lucida, sans-serif;
+        font-weight: 700;
         font-size: 23px;
         border-top-left-radius: 35px;
         border-top-right-radius: 35px;
@@ -104,14 +115,15 @@
         border-bottom-right-radius: 35px;
         text-align: center;
         overflow: hidden;
-        font-family: 'Gotham Condensed Light', Helvetica, Arial, Lucida, sans-serif;
+        font-family: 'GothamCondensed-Light', Helvetica, Arial, Lucida, sans-serif;
+        font-weight: 300;
         font-size: 21px;
         color: #000000;
     }
 
     /* Bold emphasis within quote pill */
     .wp-hero-quote-bold {
-        font-family: 'Gotham Condensed Bold', Helvetica, Arial, Lucida, sans-serif;
-        font-weight: normal;
+        font-family: 'GothamCondensed-Bold', Helvetica, Arial, Lucida, sans-serif;
+        font-weight: 700;
     }
 }
