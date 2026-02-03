@@ -5,6 +5,26 @@
 @source '../**/*.blade.php';
 @source '../**/*.js';
 
+/* Google Fonts - Inter Tight */
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Gotham Condensed Font Faces */
+@font-face {
+    font-family: 'Gotham Condensed Bold';
+    src: url('/fonts/gotham-condensed-bold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham Condensed Light';
+    src: url('/fonts/gotham-condensed-light.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 @theme {
     --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
@@ -13,4 +33,85 @@
 /* Custom styles for ACDecksVA */
 .font-serif {
     font-family: Georgia, 'Times New Roman', serif;
+}
+
+/* WordPress/Divi Clone Styles */
+@layer components {
+    /* Hero Headline - matches et_pb_text_0 */
+    .wp-hero-title {
+        padding-right: 5rem;
+        padding-left: 5rem;
+        justify-content: start;
+        align-items: stretch;
+        text-align: center;
+        font-family: 'Inter Tight', Helvetica, Arial, Lucida, sans-serif;
+        font-weight: 900;
+        color: #ffffff;
+        font-size: 75px;
+        letter-spacing: 0px;
+        line-height: 1.2em;
+    }
+
+    /* Responsive hero title for mobile */
+    @media (max-width: 768px) {
+        .wp-hero-title {
+            font-size: 38px;
+            padding-right: 1.5rem;
+            padding-left: 1.5rem;
+        }
+    }
+
+    @media (min-width: 769px) and (max-width: 1024px) {
+        .wp-hero-title {
+            font-size: 56px;
+            padding-right: 3rem;
+            padding-left: 3rem;
+        }
+    }
+
+    /* Hero Buttons - matches et_pb_button_0 */
+    .wp-hero-btn {
+        background-color: #f3efe4;
+        font-family: 'Gotham Condensed Bold', Helvetica, Arial, Lucida, sans-serif;
+        font-size: 23px;
+        border-top-left-radius: 35px;
+        border-top-right-radius: 35px;
+        border-bottom-left-radius: 35px;
+        border-bottom-right-radius: 35px;
+        padding: 0.875rem 2rem;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        color: #000000;
+        text-decoration: none;
+        transition: opacity 0.2s ease;
+    }
+
+    .wp-hero-btn:hover {
+        opacity: 0.9;
+    }
+
+    /* Quote Pill - matches et_pb_text_2 */
+    .wp-hero-quote {
+        background-color: #f3efe4;
+        padding-top: 1rem;
+        padding-right: 0rem;
+        padding-bottom: 1rem;
+        padding-left: 0rem;
+        border-top-left-radius: 35px;
+        border-top-right-radius: 35px;
+        border-bottom-left-radius: 35px;
+        border-bottom-right-radius: 35px;
+        text-align: center;
+        overflow: hidden;
+        font-family: 'Gotham Condensed Light', Helvetica, Arial, Lucida, sans-serif;
+        font-size: 21px;
+        color: #000000;
+    }
+
+    /* Bold emphasis within quote pill */
+    .wp-hero-quote-bold {
+        font-family: 'Gotham Condensed Bold', Helvetica, Arial, Lucida, sans-serif;
+        font-weight: normal;
+    }
 }
