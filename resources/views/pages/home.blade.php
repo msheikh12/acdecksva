@@ -8,79 +8,40 @@
 <section class="relative min-h-[420px] md:min-h-[520px] lg:max-h-[700px] flex items-center justify-center overflow-hidden">
     <!-- Background Image -->
     <div class="absolute inset-0 z-0">
-        <img src="/images/hero/hero-deck.jpg" alt="Beautiful custom deck" class="w-full h-full object-cover">
+        <img src="/images/hero/hero-deck.jpeg" alt="Beautiful custom deck" class="w-full h-full object-cover">
         <!-- Dark Overlay Gradient -->
         <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/60"></div>
     </div>
 
     <!-- Hero Content -->
     <div class="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 md:py-32 text-center">
-        <div class="max-w-4xl mx-auto">
-            <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
+        <div class="max-w-6xl mx-auto">
+            <!-- Hero Headline - WordPress/Divi Style -->
+            <h1 class="wp-hero-title mb-8">
                 Crafting decks for a lifetime of memories.<br>
-                <span class="text-amber-400">And then some!</span>
+                And then some!
             </h1>
-            <p class="text-lg md:text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
-                Transform your backyard into an outdoor oasis with custom-built decks designed for beauty, durability, and your lifestyle.
-            </p>
-            
-            <!-- CTA Buttons -->
+
+            <!-- CTA Buttons - WordPress/Divi Style -->
             <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                <a href="#quote" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 bg-amber-500 hover:bg-amber-600 text-white text-lg font-semibold rounded-lg shadow-lg transition-all duration-200 hover:shadow-xl hover:scale-105">
+                <a href="#quote" class="wp-hero-btn w-full sm:w-auto">
                     Get a Quote
                 </a>
-                <a href="#gallery" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white text-lg font-semibold rounded-lg border-2 border-white/30 transition-all duration-200 hover:border-white/50">
-                    See Our Work
+                <a href="#gallery" class="wp-hero-btn w-full sm:w-auto">
+                    View Portfolio
                 </a>
             </div>
         </div>
     </div>
 </section>
 
-{{-- C) Trust/Info Bar --}}
+{{-- C) Quote Pill - WordPress/Divi Style --}}
 <section class="relative -mt-12 z-20">
-    <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
-        <div class="bg-white rounded-2xl shadow-xl p-6 md:p-8">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
-                <!-- Trust Item 1 -->
-                <div class="flex items-center justify-center md:justify-start space-x-3">
-                    <div class="flex-shrink-0">
-                        <svg class="w-10 h-10 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        </svg>
-                    </div>
-                    <div>
-                        <p class="text-sm font-semibold text-gray-900">Licensed & Insured</p>
-                        <p class="text-xs text-gray-600">Fully certified professionals</p>
-                    </div>
-                </div>
-
-                <!-- Trust Item 2 -->
-                <div class="flex items-center justify-center md:justify-start space-x-3">
-                    <div class="flex-shrink-0">
-                        <svg class="w-10 h-10 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7" />
-                        </svg>
-                    </div>
-                    <div>
-                        <p class="text-sm font-semibold text-gray-900">10+ Years Experience</p>
-                        <p class="text-xs text-gray-600">Trusted by hundreds</p>
-                    </div>
-                </div>
-
-                <!-- Trust Item 3 -->
-                <div class="flex items-center justify-center md:justify-start space-x-3">
-                    <div class="flex-shrink-0">
-                        <svg class="w-10 h-10 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
-                        </svg>
-                    </div>
-                    <div>
-                        <p class="text-sm font-semibold text-gray-900">Quality Guarantee</p>
-                        <p class="text-xs text-gray-600">Built to last decades</p>
-                    </div>
-                </div>
-            </div>
+    <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+        <div class="wp-hero-quote px-6 py-4 shadow-lg">
+            <p class="leading-relaxed">
+                We treat every deck like it's the <span class="wp-hero-quote-bold">Rolls Royce</span> of outdoor living spaces—built to last, designed to impress.
+            </p>
         </div>
     </div>
 </section>
@@ -97,7 +58,7 @@
             <div class="order-2 lg:order-1">
                 <div class="relative rounded-2xl overflow-hidden shadow-2xl">
                     <div class="aspect-[4/3] max-h-[360px]">
-                        <img src="/images/feature/feature-night.jpg" alt="Beautiful deck at night" class="w-full h-full object-cover">
+                        <img src="/images/feature/feature-night.jpeg" alt="Beautiful deck at night" class="w-full h-full object-cover">
                     </div>
                 </div>
             </div>
@@ -168,7 +129,7 @@
             <div class="lg:row-span-1">
                 <div class="relative rounded-2xl overflow-hidden shadow-xl h-full">
                     <div class="aspect-[16/10]">
-                        <img src="/images/difference/difference-1.jpg" alt="Quality craftsmanship" class="w-full h-full object-cover">
+                        <img src="/images/difference/difference-1.jpeg" alt="Quality craftsmanship" class="w-full h-full object-cover">
                     </div>
                 </div>
             </div>
@@ -239,7 +200,7 @@
             <div class="lg:order-4">
                 <div class="relative rounded-2xl overflow-hidden shadow-xl h-full">
                     <div class="aspect-[4/5]">
-                        <img src="/images/difference/difference-2.jpg" alt="Custom deck features" class="w-full h-full object-cover">
+                        <img src="/images/difference/difference-2.jpeg" alt="Custom deck features" class="w-full h-full object-cover">
                     </div>
                 </div>
             </div>
